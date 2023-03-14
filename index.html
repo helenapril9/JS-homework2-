@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+    <script>            
+        let n = Math.floor(Math.random() * 1000);
+        console.log(n);        
+        result = (prompt("Введите число"));        
+        if (isNaN(result) === true) {
+            alert("Введенное значение не является числом");
+        } else if (n === Number(result)){
+            alert("Вы угадали")    
+        } else if (n > Number(result)){
+        alert("Вы не угадали, Ваше число меньше загаданного");                     
+        } else alert("Вы не угадали, Ваше число больше загаданного");               
+    </script>   
+</body>
+</html>
